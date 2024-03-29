@@ -1,26 +1,35 @@
-import React from "react";
+import React, {useState} from "react";
+import { Pruebas } from "./pruebas";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
+
 
 //create your first component
 const Home = () => {
+	const [color, setColorVerde] = useState('selected');
+	function selColVerde(){
+		setColorVerde()
+	}
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container d-flex justify-content-center align-items-center">
+			<button onClick={selColVerde}>Verde</button>
+			<button onClick={selColVerde}>Amarillo</button>
+			<button onClick={selColVerde}>Rojo</button>
+			<Pruebas/>
 		</div>
+	
 	);
 };
 
 export default Home;
+//definir 1 componente
+//importar los useState
+//definir 3 elementos button (las luces)
+//
+//
+//
+//
+//
+//
+//
+//
