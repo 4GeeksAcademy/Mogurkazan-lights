@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Pruebas } from "./pruebas";
+import { Experimento } from "./experimento";
 
 
 
@@ -12,10 +13,8 @@ const Home = () => {
 	}
 	return (
 		<div className="container d-flex justify-content-center align-items-center">
-			<button onClick={selColVerde}>Verde</button>
-			<button onClick={selColVerde}>Amarillo</button>
-			<button onClick={selColVerde}>Rojo</button>
 			<Pruebas/>
+			<Experimento/>
 		</div>
 	
 	);

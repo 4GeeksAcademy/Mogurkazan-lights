@@ -33,3 +33,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.custom-background {
+    background: radial-gradient(yellow, black);
+}
+.custom-green {
+    background-color: black;
+}
