@@ -12,8 +12,7 @@ const Home = () => {
 		setColorVerde()
 	}
 	return (
-		<div className="container d-flex justify-content-center align-items-center">
-			<Pruebas/>
+		<div className="semaforo container d-flex flex-column justify-content-center align-items-center">
 			<Experimento/>
 		</div>
 	
@@ -21,14 +20,3 @@ const Home = () => {
 };
 
 export default Home;
-//definir 1 componente
-//importar los useState
-//definir 3 elementos button (las luces)
-//
-//
-//
-//
-//
-//
-//
-//

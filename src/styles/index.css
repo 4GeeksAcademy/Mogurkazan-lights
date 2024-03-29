@@ -10,23 +10,34 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+#app {
+    background-image: url("https://img.freepik.com/foto-gratis/paisaje-urbano-japon-nocturno_23-2148889543.jpg");
+    background-size: cover;
+
+}
+
+.palo {
+    width: 20px;
+    height: 250px;
+    background-color: black;
+}
 .semaf {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
     padding: 10px 20px;
     border: none;
     
     color: white;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 0px;
     position: relative;
     overflow: hidden;
 }
 .luz {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 90px;
+    height: 90px;
     
     border-radius: 50%;
     top: 50%;
