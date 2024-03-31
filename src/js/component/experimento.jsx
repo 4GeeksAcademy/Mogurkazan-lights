@@ -25,12 +25,14 @@ export const Experimento = () => {
     return (
         <>
             <div className="palo"></div>
-            <button className={`semaf ${shineR ? 'custom-green' : 'custom-background'}`} onClick={handleShineRed}>
-                <span className="luz" style={{background: 'red'}}></span></button>
-            <button className={`semaf ${shineY ? 'custom-green' : 'custom-background'}`} onClick={handleShineYellow}>
-                <span className="luz" style={{background: 'yellow'}}></span></button>
-            <button className={`semaf ${shineG ? 'custom-green' : 'custom-background'}`} onClick={handleShineGreen}>
-                <span className="luz" style={{background: 'green'}}></span></button>
+            <div className="caja d-flex flex-column justify-content-center align-items-center">
+                <button className={`semaf ${shineR ? 'custom-green' : 'custom-background'}`} onClick={handleShineRed}>
+                    <span className="luz" style={{background: 'red'}}></span></button>
+                <button className={`semaf ${shineY ? 'custom-green' : 'custom-background'}`} onClick={handleShineYellow}>
+                    <span className="luz" style={{background: 'yellow'}}></span></button>
+                <button className={`semaf ${shineG ? 'custom-green' : 'custom-background'}`} onClick={handleShineGreen}>
+                    <span className="luz" style={{background: 'green'}}></span></button>
+            </div>
         </>
     )
 }
